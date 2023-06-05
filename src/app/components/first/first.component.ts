@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/services/data/data.service';
+
 
 @Component({
   selector: 'app-first',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent {
+
+ constructor(public dataServ: DataService) {
+
+ }
 
 }

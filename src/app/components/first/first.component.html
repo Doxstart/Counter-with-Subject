@@ -1,5 +1,5 @@
+<p>Count: {{dataServ.counter | async}}</p>
 <div>
-  <ul>
-    <li *ngFor="let counterValues of counterValuesSubject"></li>
-  </ul>
+  <button (click)="dataServ.decrement()">-</button>
+  <button (click)="dataServ.increment()">+</button>
 </div>
